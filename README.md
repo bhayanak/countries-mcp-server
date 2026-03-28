@@ -51,42 +51,6 @@ npm install -g countries-mcp-server
 
 Then add to your AI client's MCP configuration. See the [Server README](packages/countries-mcp-server/README.md) for details.
 
-## 🏗️ Development
-
-```bash
-# Clone & install
-git clone https://github.com/bhayanak/countries-mcp-server.git
-cd countries-mcp-server
-pnpm install
-
-# Build everything
-pnpm run build
-
-# Run all tests
-pnpm test
-
-# Full CI validation
-pnpm run ci
-```
-
-### Available Scripts
-
-| Script | Description |
-|--------|-------------|
-| `pnpm run build` | Build all packages |
-| `pnpm run dev` | Run server in dev mode |
-| `pnpm test` | Run all tests |
-| `pnpm run test:coverage` | Tests + coverage report |
-| `pnpm run lint` | ESLint check |
-| `pnpm run typecheck` | TypeScript type check |
-| `pnpm run format` | Prettier format check |
-| `pnpm run ci` | Full CI pipeline |
-| `pnpm run package` | Package server (.tgz) + extension (.vsix) |
-
-## 🛠️ Tech Stack
-
-TypeScript · Node.js ≥ 18 · `@modelcontextprotocol/sdk` · Zod · tsup · esbuild · Vitest · ESLint · Prettier · pnpm workspaces
-
 ## 📄 License
 
 [MIT](LICENSE) © bhayanak

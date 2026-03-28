@@ -41,18 +41,6 @@ This VS Code extension embeds the [Countries MCP Server](../countries-mcp-server
 code --install-extension countries-mcp-vscode-0.1.0.vsix
 ```
 
-### From Source
-
-```bash
-git clone https://github.com/bhayanak/countries-mcp-server.git
-cd countries-mcp-server
-pnpm install
-pnpm run build
-cd packages/countries-vscode-extension
-pnpm run package
-code --install-extension countries-mcp-vscode-*.vsix
-```
-
 ## 🚀 Usage
 
 After installation, the **REST Countries** MCP server appears automatically in VS Code's MCP servers list. You can:
