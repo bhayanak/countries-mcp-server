@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="globe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a7bd5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="land" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#56ab2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e063;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" ry="48" fill="url(#bg)" />
+  <circle cx="128" cy="118" r="68" fill="url(#globe)" opacity="0.95"/>
+  <ellipse cx="128" cy="118" rx="68" ry="68" fill="none" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <ellipse cx="128" cy="118" rx="34" ry="68" fill="none" stroke="white" stroke-width="1.2" opacity="0.25"/>
+  <ellipse cx="128" cy="118" rx="54" ry="68" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <line x1="60" y1="95" x2="196" y2="95" stroke="white" stroke-width="1.2" opacity="0.25"/>
+  <line x1="60" y1="118" x2="196" y2="118" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  <line x1="60" y1="141" x2="196" y2="141" stroke="white" stroke-width="1.2" opacity="0.25"/>
+  <path d="M100,85 Q108,78 118,82 Q125,86 130,80 Q138,76 145,82 Q150,88 148,95 Q142,92 135,95 Q128,98 120,94 Q112,90 105,93 Q98,90 100,85Z" fill="url(#land)" opacity="0.85"/>
+  <path d="M108,105 Q115,100 125,103 Q132,107 138,104 Q145,100 152,105 Q158,112 155,120 Q148,125 140,122 Q132,118 125,122 Q118,126 110,120 Q104,114 108,105Z" fill="url(#land)" opacity="0.85"/>
+  <path d="M135,130 Q142,126 150,130 Q155,136 152,142 Q145,145 138,140 Q132,135 135,130Z" fill="url(#land)" opacity="0.8"/>
+  <path d="M88,100 Q95,96 100,102 Q103,108 98,112 Q92,110 88,104Z" fill="url(#land)" opacity="0.75"/>
+  <circle cx="78" cy="108" r="4" fill="#ffd700" opacity="0.9"/>
+  <circle cx="170" cy="95" r="4" fill="#ffd700" opacity="0.9"/>
+  <circle cx="145" cy="155" r="3.5" fill="#ffd700" opacity="0.9"/>
+  <circle cx="108" cy="75" r="3.5" fill="#ffd700" opacity="0.9"/>
+  <line x1="78" y1="108" x2="108" y2="75" stroke="#ffd700" stroke-width="1.2" opacity="0.4"/>
+  <line x1="108" y1="75" x2="170" y2="95" stroke="#ffd700" stroke-width="1.2" opacity="0.4"/>
+  <line x1="170" y1="95" x2="145" y2="155" stroke="#ffd700" stroke-width="1.2" opacity="0.4"/>
+  <line x1="78" y1="108" x2="145" y2="155" stroke="#ffd700" stroke-width="1.2" opacity="0.4"/>
+  <text x="128" y="205" text-anchor="middle" font-family="SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="24" font-weight="800" fill="white" letter-spacing="3">COUNTRIES</text>
+  <text x="128" y="232" text-anchor="middle" font-family="SF Pro Display, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" fill="white" opacity="0.85" letter-spacing="2">MCP SERVER</text>
+</svg>

@@ -1,0 +1,26 @@
+[
+  {
+    "name": { "common": "Germany", "official": "Federal Republic of Germany" },
+    "cca2": "DE", "cca3": "DEU",
+    "capital": ["Berlin"], "region": "Europe", "subregion": "Western Europe",
+    "population": 83240525, "area": 357114,
+    "flag": "🇩🇪",
+    "flags": { "png": "https://flagcdn.com/w320/de.png", "svg": "https://flagcdn.com/de.svg" }
+  },
+  {
+    "name": { "common": "France", "official": "French Republic" },
+    "cca2": "FR", "cca3": "FRA",
+    "capital": ["Paris"], "region": "Europe", "subregion": "Western Europe",
+    "population": 67390000, "area": 551695,
+    "flag": "🇫🇷",
+    "flags": { "png": "https://flagcdn.com/w320/fr.png", "svg": "https://flagcdn.com/fr.svg" }
+  },
+  {
+    "name": { "common": "Spain", "official": "Kingdom of Spain" },
+    "cca2": "ES", "cca3": "ESP",
+    "capital": ["Madrid"], "region": "Europe", "subregion": "Southern Europe",
+    "population": 47351567, "area": 505992,
+    "flag": "🇪🇸",
+    "flags": { "png": "https://flagcdn.com/w320/es.png", "svg": "https://flagcdn.com/es.svg" }
+  }
+]

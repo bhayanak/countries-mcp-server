@@ -1,0 +1,29 @@
+{
+  "name": "countries-mcp-server-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm --filter countries-mcp-server run dev",
+    "test": "pnpm -r run test",
+    "test:coverage": "pnpm --filter countries-mcp-server run test:coverage",
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
+    "typecheck": "pnpm -r run typecheck",
+    "format": "pnpm -r run format",
+    "format:fix": "pnpm -r run format:fix",
+    "validate": "pnpm -r run validate",
+    "ci": "pnpm --filter countries-mcp-server run ci",
+    "package": "pnpm -r run package"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhayanak/countries-mcp-server.git"
+  },
+  "license": "MIT",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}

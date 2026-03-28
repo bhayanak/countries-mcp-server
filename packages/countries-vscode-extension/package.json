@@ -1,0 +1,109 @@
+{
+  "name": "countries-mcp-vscode",
+  "displayName": "Countries MCP Server",
+  "description": "VS Code extension providing the Countries MCP server for AI assistants — search, filter, and compare country data with AI",
+  "version": "0.1.0",
+  "publisher": "bhayanak",
+  "icon": "logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp server",
+    "ai",
+    "copilot",
+    "countries",
+    "restcountries",
+    "geography",
+    "rest-api",
+    "model-context-protocol",
+    "chat",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhayanak/countries-mcp-server.git"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "countries-mcp-server",
+        "label": "Countries MCP Server"
+      }
+    ],
+    "configuration": {
+      "title": "Countries MCP Server",
+      "properties": {
+        "restcountriesMcp.baseUrl": {
+          "type": "string",
+          "default": "https://restcountries.com/v3.1",
+          "description": "Base URL for the REST Countries API"
+        },
+        "restcountriesMcp.cacheTtlMs": {
+          "type": "number",
+          "default": 3600000,
+          "description": "Cache time-to-live in milliseconds (default: 1 hour)"
+        },
+        "restcountriesMcp.cacheEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable response caching"
+        },
+        "restcountriesMcp.timeoutMs": {
+          "type": "number",
+          "default": 10000,
+          "description": "HTTP request timeout in milliseconds"
+        },
+        "restcountriesMcp.maxResults": {
+          "type": "number",
+          "default": 50,
+          "description": "Maximum number of countries returned per query"
+        },
+        "restcountriesMcp.defaultFields": {
+          "type": "string",
+          "default": "name,capital,population,region,flags",
+          "description": "Comma-separated list of default fields to return"
+        },
+        "restcountriesMcp.retryCount": {
+          "type": "number",
+          "default": 2,
+          "description": "Number of retry attempts on API failure"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node build.cjs",
+    "test": "echo 'No tests for extension'",
+    "test:coverage": "echo 'No coverage for extension'",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Lint passed (extension)'",
+    "lint:fix": "echo 'No lint fixes needed (extension)'",
+    "format": "echo 'Format passed (extension)'",
+    "format:fix": "echo 'No format fixes needed (extension)'",
+    "validate": "tsc --noEmit && node build.cjs",
+    "ci": "tsc --noEmit && node build.cjs",
+    "package": "node build.cjs && vsce package --no-dependencies -o countries-mcp-vscode-$npm_package_version.vsix"
+  },
+  "dependencies": {
+    "countries-mcp-server": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/node": "^20.17.57",
+    "@vscode/vsce": "^3.3.2",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.8.3"
+  }
+}
